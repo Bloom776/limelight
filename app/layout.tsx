@@ -1,15 +1,16 @@
-import { StackProvider, StackTheme } from "@stackframe/stack";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { stackServerApp } from "../stack";
+import { Schibsted_Grotesk } from "next/font/google";
 import "./globals.css";
-import { Provider } from "./provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const schibsted = Schibsted_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "Stack Template",
-  description: "A Multi-tenant Next.js Starter Template",
+  title: "Limelight Elite",
+  description: "B2B Growth Infrastructure for Modern Agencies",
 };
 
 export default function RootLayout({
@@ -18,13 +19,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <Provider>
-          <StackProvider app={stackServerApp}>
-            <StackTheme>{children}</StackTheme>
-          </StackProvider>
-        </Provider>
+    <html lang="en" className="dark" suppressHydrationWarning>
+      <body className={schibsted.variable}>
+        {children}
       </body>
     </html>
   );

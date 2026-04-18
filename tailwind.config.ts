@@ -7,7 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -52,6 +52,22 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Limelight brand
+        brand: {
+          gold: "#C9A84C",
+          "gold-light": "#E8C96A",
+          "gold-dark": "#9E7A2E",
+          obsidian: "#0A0A0A",
+          charcoal: "#111111",
+          "charcoal-light": "#1A1A1A",
+          smoke: "#2A2A2A",
+          platinum: "#E8E8E8",
+          ivory: "#F5F3EE",
+        },
+      },
+      fontFamily: {
+        sans: ["Schibsted Grotesk", "sans-serif"],
+        editorial: ["PP Editorial New", "Georgia", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
