@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { Check, X, ArrowRight } from "lucide-react";
 
