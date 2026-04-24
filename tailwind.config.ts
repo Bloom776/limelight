@@ -52,17 +52,17 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Limelight brand
+        // Limelight brand — red/black/white system
         brand: {
-          gold: "#C9A84C",
-          "gold-light": "#E8C96A",
-          "gold-dark": "#9E7A2E",
-          obsidian: "#0A0A0A",
-          charcoal: "#111111",
-          "charcoal-light": "#1A1A1A",
+          red: "#DB0000",
+          "red-light": "#FF1A1A",
+          "red-dark": "#A30000",
+          black: "#000001",
+          "black-light": "#111111",
+          "black-soft": "#1A1A1A",
           smoke: "#2A2A2A",
-          platinum: "#E8E8E8",
-          ivory: "#F5F3EE",
+          white: "#FFFFF1",
+          "white-dim": "rgba(255,255,241,0.7)",
         },
       },
       fontFamily: {
