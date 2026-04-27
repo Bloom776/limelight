@@ -1,16 +1,22 @@
 import type { Metadata } from "next";
-import { Schibsted_Grotesk } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const schibsted = Schibsted_Grotesk({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Limelight Elite",
-  description: "B2B Growth Infrastructure for Modern Agencies",
+  title: "Limelight CS",
+  description: "B2B Media Engineering for Seed-Stage UK Tech Founders",
 };
 
 export default function RootLayout({
@@ -20,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body className={schibsted.variable}>
+      <body className={`${inter.variable} ${playfair.variable}`}>
         {children}
       </body>
     </html>
